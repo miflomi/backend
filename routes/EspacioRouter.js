@@ -2,17 +2,17 @@ import express from 'express';
 import { 
         crearEspacio, 
         listarEspacios, 
-        getActById,
-        deleteActById,
-        updeteActById 
+        getEspById,
+        deleteEspById,
+        updeteEspById 
     } from '../controllers/EspacioController.js';
 import { validarJWT } from '../middlewares/auth.js';
 const router = express.Router();
 
 router.get('/', listarEspacios);
-router.get('/:id', getActById);
-router.delete('/:id', validarJWT, deleteActById);
-router.put('/:id', validarJWT, updeteActById);
-router.post('/', validarJWT, crearActividad);
+router.get('/:id', getEspById);
+router.delete('/:id', validarJWT, deleteEspById);
+router.put('/:id', validarJWT, updeteEspById);
+router.post('/', validarJWT, crearEspacio);
 
 export default router;
