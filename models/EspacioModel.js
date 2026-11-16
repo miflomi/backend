@@ -12,7 +12,7 @@ const esquema = new Schema({
     },
     dias: String,
     horario: String,
-    costo: Number,
+    recursos: String,
     imagen: {
     type: String,
     default: './public/img/cursoNuevo.png' // Opcional: una imagen base si el usuario no sube nada
