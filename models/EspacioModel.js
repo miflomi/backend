@@ -7,7 +7,7 @@ const esquema = new Schema({
         required: [true, "Falta el campo nombre"]
     },
     cupo: {
-        type: number,
+        type: Number,
         required: [true, "Falta el campo cupo"]
     },
     dias: String,
