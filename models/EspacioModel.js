@@ -15,7 +15,7 @@ const esquema = new Schema({
     recursos: String,
     imagen: {
     type: String,
-    default: './public/img/cursoNuevo.png' // Opcional: una imagen base si el usuario no sube nada
+    default: './public/img/espacioNuevo.png' // Opcional: una imagen base si el usuario no sube nada
   }
 });
 
